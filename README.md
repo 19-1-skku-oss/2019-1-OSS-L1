@@ -1,9 +1,9 @@
 # 2019-1-OSS-L1
 ## Member
-유민종 (수학과/17) : mjyoo2
-조재영 (소프트웨어학과/11) : joeycho 
-장형준 (소프트웨어학과/17) : hyungjc
-이영숙 (경제학과/14) : martinalee94
+유민종 (수학과/17) : mjyoo2 <br>
+조재영 (소프트웨어학과/11) : joeycho <br>
+장형준 (소프트웨어학과/17) : hyungjc <br>
+이영숙 (경제학과/14) : martinalee94 <br>
 
 ## RUST
 
