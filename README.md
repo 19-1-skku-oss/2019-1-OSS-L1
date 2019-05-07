@@ -11,4 +11,4 @@ Rust’s rich type system and ownership model guarantee memory-safety and thread
 ### Productivity
 Rust has great documentation, a friendly compiler with useful error messages, and top-notch tooling — an integrated package manager and build tool, smart multi-editor support with auto-completion and type inspections, an auto-formatter, and more.
 
-![Rust] https://www.rust-lang.org/static/images/rust-logo-blk.svg
+![Rust] (https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/240px-Rust_programming_language_black_logo.svg.png)
