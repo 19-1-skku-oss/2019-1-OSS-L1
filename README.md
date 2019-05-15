@@ -1,17 +1,39 @@
 # 2019-1-OSS-L1
 
 ## Teammates
-Minjong Yoo Interest:  <br>
+Minjong Yoo 
+
+Category | list
+-------- | ------
+Interest | Python
+Languages | C,Python
+<br> 
+
 Jaeyoung Cho 
 
 Category | list
 -------- | ------
 Interest | Cross-platform, Machine Learning, Web development
-Languages | Ruby, C++, C, Java, Python, Kotlin
+Frameworks | Ruby on Rails, Sinatra, Android
+Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
 <br> 
 
-Youngsuk Lee <br> Interest: <br>
-Hyungjun Chang <br> Interest: <br>
+Youngsuk Lee 
+
+Category | list
+-------- | ------
+Interest | Antlr
+Languages |C++, C, Java
+<br> 
+
+Hyungjun Chang 
+
+Category | list
+-------- | ------
+Interest | Git, MAC OSX
+Languages | Shell Script
+<br> 
+
 
 ## Current project list
 
@@ -35,7 +57,6 @@ Refer to here: https://github.com/MunGell/awesome-for-beginners
 - [Sinatra](https://github.com/sinatra/sinatra/labels/good%20first%20issue) _(label: good first issue)_ <br> Classy web-development dressed in a DSL.
 
 ### C++
-
 
 - [electron](https://github.com/electron/electron/labels/good%20first%20issue) _(label: good first issue)_ <br> Build cross platform desktop apps with JavaScript, HTML, and CSS
 - [tensorflow](https://github.com/tensorflow/tensorflow/labels/stat%3Acontributions%20welcome) _(label: stat:contributions welcome)_ <br> Computation using data flow graphs for scalable machine learning
