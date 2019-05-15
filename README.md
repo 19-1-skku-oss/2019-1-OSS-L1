@@ -1,10 +1,17 @@
 # 2019-1-OSS-L1
 
 ## Teammates
-Minjong Yoo <br> Interest: 
-Jaeyoung Cho <br> Interest: Cross-platform, Machine Learning, Web development Languages: Ruby, C++, C, Java, Python, Kotlin 
-Youngsuk Lee <br> Interest:
-Hyungjun Chang <br> Interest:
+Minjong Yoo Interest:  <br>
+Jaeyoung Cho 
+
+Category | list
+-------- | ------
+Interest | Cross-platform, Machine Learning, Web development
+Languages | Ruby, C++, C, Java, Python, Kotlin
+<br> 
+
+Youngsuk Lee <br> Interest: <br>
+Hyungjun Chang <br> Interest: <br>
 
 ## Current project list
 
