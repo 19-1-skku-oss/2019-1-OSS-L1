@@ -26,12 +26,12 @@ Interest | Antlr
 Languages |C++, C, Java
 <br> 
 
-Hyungjun Chang 
+Hyung Jun Chang 
 
 Category | list
 -------- | ------
-Interest | Git, MAC OSX
-Languages | Shell Script
+Interest | Data Science
+Languages | C, C++, Java, MySQL
 <br> 
 
 
