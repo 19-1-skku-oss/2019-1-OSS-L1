@@ -5,8 +5,8 @@ Minjong Yoo
 
 Category | list
 -------- | ------
-Interest | Python
-Languages | C,Python
+Interest | Python, Reinforcement learning
+Languages | C, Python
 <br> 
 
 Jaeyoung Cho 
