@@ -18,12 +18,12 @@ Frameworks | Ruby on Rails, Sinatra, Android
 Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
 <br> 
 
-Youngsuk Lee 
+Youngsuk Lee♥
 
 Category | list
 -------- | ------
-Interest | Antlr
-Languages |C++, C, Java
+Interest | IOT, Fintech
+Languages |C++, C, Java, AWS
 <br> 
 
 Hyung Jun Chang 
