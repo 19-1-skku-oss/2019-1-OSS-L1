@@ -37,11 +37,7 @@ Languages | C, C++, Java, MySQL
 
 ## Current project: pytest
 
-.. image:: https://docs.pytest.org/en/latest/_static/pytest1.png
-   :target: https://docs.pytest.org/en/latest/
-   :align: center
-   :alt: pytest
-
+![pytest](https://docs.pytest.org/en/latest/_static/pytest1.png)
 
 ------
 
