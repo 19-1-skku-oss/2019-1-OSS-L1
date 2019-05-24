@@ -2,9 +2,6 @@
 layout: single
 title:  "Introduce team"
 date:   2019-05-24
-tags: featured
-image:
-comments: true
 ---
 
 # 2019-1-OSS-L1
