@@ -1,0 +1,50 @@
+Alabama,AL,Cotton State,Montgomery
+Alaska,AK,The Last Frontier,Juneau
+Arizona,AR,Grand Canyon State,Phoenix
+Arkansas,AK,Land of Opportunity,Little Rock
+California,CA,Golden State,Sacramento
+Colorado,CO,Centennial State,Denver
+Connecticut,CT,Constitution State,Hartford
+Delaware,DE,Diamond State,Dover
+Florida,FL,Sunshine State,Tallahassee
+Georgia,GA,Peach State,Atlanta
+Hawaii,HI,Aloha State,Honolulu
+Idaho,ID,Gem State,Boise
+Illinois,IL,Prairie State,Springfield
+Indiana,IN,Hoosier State,Indianapolis
+Iowa,IA,Hawkeye State,Des Moines
+Kansas,KS,Sunflower State,Topeka
+Kentucky,KY,Bluegrass State,Frankfort
+Louisiana,LA,Pelican State,Baton Rouge
+Maine,ME,Pine Tree State,Augusta
+Maryland,MD,Old Line State,Annapolis
+Massachusetts,MA,Bay State,Boston
+Michigan,MI,Wolverine State,Lansing
+Minnesota,MN,Gopher State,Saint Paul
+Mississippi,MI,Magnolia State,Jackson
+Missouri,MS,Show Me State,Jefferson City
+Montana,MT,Treasure State,Helena
+Nebraska,NE,Cornhusker State,Lincoln
+Nevada,NV,Silver State,Carson City
+New Hampshire,NH,Granite State,Concord
+New Jersey,NJ,Garden State,Trenton
+New Mexico,NM,Land of Enchantment,Santa Fe
+New York,NY,Empire State,Albany
+North Carolina,NC,Tar Heel State,Raleigh
+North Dakota,ND,Flickertail State,Bismark
+Ohio,OH,Buckeye State,Columbus
+Oklahoma,OK,Sooner State,Oklahoma City
+Oregon,OR,Beaver State,Salem
+Pennsylvania,PA,Keystone State,Harrisburg
+Rhode Island,RI,Little Rhody,Providence
+South Carolina,SC,Palmetto State,Columbia
+South Dakota,SD,Coyote State,Pierre
+Tennessee,TN,Volunteer State,Nashville
+Texas,TX,Lone Star State,Austin
+Utah,UT,Beehive State,Salt Lake City
+Vermont,VT,Green Mountain State,Montpelier
+Virginia,VA,Old Dominion,Richmond
+Washington,WA,Evergreen State,Olympia
+West Virginia,WV,Mountain State,Charleston
+Wisconsin,WI,Badger State,Madison
+Wyoming,WY,Equality State,Cheyenne
