@@ -1,6 +1,6 @@
 ---
 title: "introduce about team"
-date: 2019-05-24 12:13:28 +0900
+date: 2019-05-24 00:00:00 +0900
 categories: team post
 ---
 
