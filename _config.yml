@@ -15,13 +15,13 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "Koera"
+title                    : "2019 OSS Lab"
 title_separator          : "-"
 name                     : "Your Name"
 description              : "An amazing website."
 url                      : https://19-1-skku-oss.github.io
-baseurl                  : /2019-1-OSS-L1/
+baseurl                  : /2019-1-OSS-L1
 repository               : 19-1-skku-oss/2019-1-OSS-L1
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -106,10 +106,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "OSS L1"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "The aim is exploring open source project and participating it and being active!"
+  location         : "SKKU"
   email            :
   links:
     - label: "Email"
