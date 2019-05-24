@@ -1,5 +1,4 @@
 ---
-layout: single
 title:  "Introduce team"
 date:   2019-05-24
 ---
