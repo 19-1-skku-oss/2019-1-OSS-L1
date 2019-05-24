@@ -1,7 +1,10 @@
 ---
-title: "introduce about team"
-date: 2019-05-24 00:00:00 +0900
-categories: team post
+layout: post
+title:  "Introduce team"
+date:   2019-05-24
+tags: featured
+image:
+comments: true
 ---
 
 # 2019-1-OSS-L1
