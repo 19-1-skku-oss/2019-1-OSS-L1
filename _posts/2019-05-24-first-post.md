@@ -1,6 +1,7 @@
 ---
-title:  "Introduce team"
-date:   2019-05-24
+title: "team introduce"
+date: 2017-10-20 08:26:28 -0400
+categories: jekyll update
 ---
 
 # 2019-1-OSS-L1
