@@ -20,9 +20,9 @@ title                    : "2019 OSS Lab"
 title_separator          : "-"
 name                     : "Your Name"
 description              : "An amazing website."
-url                      : https://19-1-skku-oss.github.io
-baseurl                  : /2019-1-OSS-L1
-repository               : 19-1-skku-oss/2019-1-OSS-L1
+url                      : "https://19-1-skku-oss.github.io"
+baseurl                  : "/2019-1-OSS-L1"
+repository               : "19-1-skku-oss/2019-1-OSS-L1"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -64,9 +64,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search                   : true
+search_full_content      : true
+search_provider          : lunr
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
