@@ -7,6 +7,7 @@ categories: jekyll update
 # 2019-1-OSS-L1
 
 ## Teammates
+<br>
 Minjong Yoo 
 ---
  - Interest: Python, Reinforcement learning
