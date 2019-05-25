@@ -40,7 +40,7 @@ Languages | C, C++, Java, MySQL
 ![pytest](https://docs.pytest.org/en/latest/_static/pytest1.png)
 
 ------
-
+![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_first_one.PNG)
 
 
 - [Pytest](https://github.com/pytest-dev/pytest/labels/status%3A%20easy) _(label: status: easy)_ <br> The pytest framework makes it easy to write small tests, yet scales to support complex functional testing.
