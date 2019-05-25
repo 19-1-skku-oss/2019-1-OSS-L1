@@ -9,35 +9,27 @@ categories: jekyll update
 ## Teammates
 Minjong Yoo 
 
-Category | list
--------- | ------
-Interest | Python, Reinforcement learning
-Languages | C, Python
+-Interest | Python, Reinforcement learning
+-Languages | C, Python
 <br> 
 
 Jaeyoung Cho 
 
-Category | list
--------- | ------
-Interest | Cross-platform, Machine Learning, Web development
-Frameworks | Ruby on Rails, Sinatra, Android
-Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
+-Interest | Cross-platform, Machine Learning, Web development
+-Frameworks | Ruby on Rails, Sinatra, Android
+-Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
 <br> 
 
 Youngsuk Lee♥
 
-Category | list
--------- | ------
-Interest | IOT, Fintech
-Languages |C++, C, Java, AWS
+-Interest | IOT, Fintech
+-Languages |C++, C, Java, AWS
 <br> 
 
 Hyung Jun Chang 
 
-Category | list
--------- | ------
-Interest | Data Science
-Languages | C, C++, Java, MySQL
+-Interest | Data Science
+-Languages | C, C++, Java, MySQL
 <br> 
 
 
