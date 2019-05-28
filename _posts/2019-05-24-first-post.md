@@ -1,7 +1,7 @@
 ---
 title: "team introduce"
 date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
+categories: team_project
 ---
 
 # 2019-1-OSS-L1
