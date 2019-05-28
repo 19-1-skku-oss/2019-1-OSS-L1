@@ -24,6 +24,8 @@ Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
 
 Youngsuk Lee♥
 
+![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/martina/testing_martina/11.JPG?raw=true)
+
 Category | list
 -------- | ------
 Interest | IOT, Fintech
