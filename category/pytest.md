@@ -1,6 +1,6 @@
 ---
 
-layout: categories
+layout: category
 
 title: pytest
 
