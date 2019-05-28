@@ -1,9 +1,9 @@
 def RectangleArea(width, height):
     return width*height
 
-width=float(input("Width: "))
-height=float(input("Height: "))
 
-Area=RectangleArea(width,height)
+def test_case():
+ assert RectangleArea(5,8) == 40
+ assert RectangleArea(5,8) == 20
+ return	
 
-print(Area)
