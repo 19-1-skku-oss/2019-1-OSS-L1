@@ -291,7 +291,9 @@ def _in_venv(path):
     )
     return any([fname.basename in activates for fname in bindir.listdir()])
 
-
+'''
+test할 파일을 검색 하는 중에 무시 할 파일을 걸러내는 함수.
+'''
 def pytest_ignore_collect(path, config):
     ignore_paths = config._getconftest_pathlist("collect_ignore", path=path.dirpath())
     ignore_paths = ignore_paths or []
