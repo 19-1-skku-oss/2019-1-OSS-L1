@@ -38,14 +38,14 @@ def test_answer():
 이제 당신은 테스트 함수를 실행시킬 수 있습니다.
 ```
 $ pytest
-=========================== test session starts ============================
+=========================== test session starts ==========================
 platform linux -- Python 3.x.y, pytest-4.x.y, py-1.x.y, pluggy-0.x.y
 cachedir: $PYTHON_PREFIX/.pytest_cache
 rootdir: $REGENDOC_TMPDIR
 collected 1 item
-test_sample.py F [100%]
-================================= FAILURES =================================
-_______________________________ test_answer ________________________________
+test_sample.py F 						[100%]
+================================= FAILURES ===============================
+_______________________________ test_answer ______________________________
 
 	def test_answer():
 > 		assert func(3) == 5
@@ -53,7 +53,7 @@ E 		assert 4 == 5
 E 		+ where 4 = func(3)
 
 test_sample.py:5: AssertionError
-========================= 1 failed in 0.12 seconds =========================
+========================= 1 failed in 0.12 seconds =======================
 ```
 func(3)이 5를 반환하지 않기 때문에, 위의 테스트는 실패를 보고합니다.
 
@@ -103,9 +103,9 @@ class TestClass(object):
 pytest는 [Conventions for Python test discovery]("chapter 23.2")에 따라서 모든 테스트를 찾아냅니다. 그러므로, test_로 시작하는 모든 함수나, Test로 시작하는 class 내부에 있는 test_로 시작하는 함수들을 찾아냅니다. 이 class는 다른 class를 상속받을 필요가 없습니다. 단순히 파일 이름을 입력하고 실행시키면 됩니다.
 ```
 $ pytest -q test_class.py
-.F 																					[100%]
-================================= FAILURES =================================
-____________________________ TestClass.test_two ____________________________
+.F 								[100%]
+================================= FAILURES ===============================
+____________________________ TestClass.test_two __________________________
 self = <test_class.TestClass object at 0xdeadbeef>
 
 	def test_two(self):
@@ -132,9 +132,9 @@ def test_needsfiles(tmpdir):
 함수 signature의 안에 `tmpdir`의 이름을 리스트로 입력하세요. pytest는 확인 후 fixture factory를 불러내어 함수 call이 실행되기 전에 자원을 생성할 것입니다. 테스트가 실행되기 전에, pytest는 테스트 마다 실행되는 고유한 임시 directory를 생성합니다.
 ```
 $ pytest -q test_tmpdir.py
-F 																					[100%]
-================================= FAILURES =================================
-_____________________________ test_needsfiles ______________________________
+F 								[100%]
+================================= FAILURES ===============================
+_____________________________ test_needsfiles ____________________________
 tmpdir = local('PYTEST_TMPDIR/test_needsfiles0')
 
 	def test_needsfiles(tmpdir):
@@ -143,7 +143,7 @@ tmpdir = local('PYTEST_TMPDIR/test_needsfiles0')
 E 		assert 0
 
 test_tmpdir.py:3: AssertionError
---------------------------- Captured stdout call ---------------------------
+--------------------------- Captured stdout call -------------------------
 PYTEST_TMPDIR/test_needsfiles0
 1 failed in 0.12 seconds
 ```
