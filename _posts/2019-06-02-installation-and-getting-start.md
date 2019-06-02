@@ -24,6 +24,7 @@ This is pytest version 4.x.y, imported from $PYTHON_PREFIX/lib/python3.6/site-
 ˓→packages/pytest.py
 ```
 <br>
+
 1.2 첫 테스트 생성
 ---
 다음과 같은 간단한 테스트 함수를 생성하세요.
