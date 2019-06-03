@@ -3,7 +3,7 @@
 Homepage: https://19-1-skku-oss.github.io/2019-1-OSS-L1/
 
 ## Teammates
-Minjong Yoo 
+< Minjong Yoo > 
 
 Category | list
 -------- | ------
@@ -11,7 +11,7 @@ Interest | Python, Reinforcement learning
 Languages | C, Python
 <br> 
 
-Jaeyoung Cho 
+< Jaeyoung Cho >
 
 ![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_first_one.PNG)
 
@@ -22,7 +22,7 @@ Frameworks | Ruby on Rails, Sinatra, Android
 Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
 <br> 
 
-Youngsuk Lee♥
+< Martina Lee♥ >
 
 ![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/martina/testing_martina/11.JPG)
 
@@ -32,7 +32,7 @@ Interest | IOT, Fintech
 Languages |C++, C, Java, AWS
 <br> 
 
-Hyung Jun Chang 
+< Hyung Jun Chang >
 
 Category | list
 -------- | ------
