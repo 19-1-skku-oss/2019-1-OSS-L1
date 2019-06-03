@@ -33,7 +33,9 @@ Languages |C++, C, Java, AWS
 Hyung Jun Chang 
 
 ![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_w_test.png)
+pytest when python.py contains the function name test
 ![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_wo_test.png)
+pytest when python.py doesn't have the function name test
 
 Category | list
 -------- | ------
