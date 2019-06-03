@@ -13,5 +13,7 @@ main:
 
 # docs links
 docs:
-  -title: "1. 설치 및 실행:
-   url: "https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest/document/installation-and-getting-start/"
+  - title: pytest document
+    children:
+      - title: "1. 설치 및 실행"
+        url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest/document/installation-and-getting-start
