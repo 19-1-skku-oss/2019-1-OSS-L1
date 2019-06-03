@@ -1,15 +1,10 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Team member"
+    url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/team_project/first-post/
+  - title: "pytest document"
+    url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/categories/pytest-document/
+
 
 # docs links
 docs:
