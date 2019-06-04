@@ -11,6 +11,6 @@ docs:
   - title: pytest document
     children:
       - title: "설치 및 실행"
-        url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest/document/installation-and-getting-start
+        url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest/document/installation-and-getting-start/
       - title: "기존의 시험장(test suite)에서의 pytest"
         url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest%20document/test-suite-pytest/
