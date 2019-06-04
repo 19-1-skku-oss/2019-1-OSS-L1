@@ -15,8 +15,6 @@ Role: Manage github static page, guide documentation translation project
 
 * **Jaeyoung Cho** *Joeycho*
 
-![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_first_one.PNG)
-
 Category | list
 -------- | ------
 Interest | Cross-platform, Machine Learning, Web development
@@ -28,8 +26,6 @@ Role: Create relevant test codes, translate documentation, contribute directly t
 
 * **Martina Lee♥** *martinalee94*
 
-![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/martina/testing_martina/11.JPG)
-
 Category | list
 -------- | ------
 Interest | IOT, Fintech
@@ -40,11 +36,6 @@ Role: Create relevant test codes, improve UI in github pages, translate document
 
 *  **Hyung Jun Chang** *hyungjc*
 
-![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_w_test.png)
-pytest when python.py contains the function name test
-![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_wo_test.png)
-pytest when python.py doesn't have the function name test
-
 Category | list
 -------- | ------
 Interest | Data Science
@@ -53,6 +44,9 @@ Languages | C, C++, Java, MySQL
 
 Role: Create relevant test codes, translate documentation
 
+
+
+
 ## Current project: pytest
 
 ![pytest](https://docs.pytest.org/en/latest/_static/pytest1.png)
@@ -60,6 +54,17 @@ Role: Create relevant test codes, translate documentation
 ------
 
 - [Pytest](https://github.com/pytest-dev/pytest/labels/status%3A%20easy) _(label: status: easy)_ <br> The pytest framework makes it easy to write small tests, yet scales to support complex functional testing.
+
+## Screenshots
+
+![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_first_one.PNG)
+
+![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/martina/testing_martina/11.JPG)
+
+![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_w_test.png)
+pytest when python.py contains the function name test
+![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_wo_test.png)
+pytest when python.py doesn't have the function name test
 
 ## How to contribute
 
