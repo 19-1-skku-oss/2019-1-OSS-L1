@@ -11,9 +11,7 @@ Interest | Python, Reinforcement learning
 Languages | C, Python
 
 Role: Manage github static page, guide documentation translation project
-
-
-
+<br>
 
 * **Jaeyoung Cho** *Joeycho*
 
