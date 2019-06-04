@@ -12,5 +12,7 @@ docs:
     children:
       - title: "설치 및 실행"
         url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest%20document/installation-and-getting-start/
+      - title : "사용법 그리고 실행방법"
+        url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest%20document/Usage-and-invocation/
       - title: "기존의 시험장(test suite)에서의 pytest"
         url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest%20document/test-suite-pytest/
