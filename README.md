@@ -59,14 +59,18 @@ Role: Create relevant test codes, translate documentation
 
 ## 3. Screenshots
 
-![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_first_one.PNG)
 
-![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/martina/testing_martina/11.JPG)
-
-![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_w_test.png)
+<img src="https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_first_one.PNG" width="400" height="300" alt="" />
+<img src="https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/martina/testing_martina/11.JPG" width="400" height="300" alt="" />
+<img src="https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_w_test.png" width="600" height="300" alt="" />
 pytest when python.py contains the function name test
-![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_wo_test.png)
+<img src="https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_wo_test.png" width="600" height="300" alt="" />
 pytest when python.py doesn't have the function name test
+
+
+
+
+
 
 ## 4. How to contribute
 
