@@ -13,6 +13,8 @@ Languages | C, Python
 Role: Manage github static page, guide documentation translation project
 
 
+
+
 * **Jaeyoung Cho** *Joeycho*
 
 Category | list
@@ -22,6 +24,8 @@ Frameworks | Ruby on Rails, Sinatra, Android
 Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
 
 Role: Create relevant test codes, translate documentation, contribute directly to the main open source project
+
+
 
 
 * **Martina Lee♥** *martinalee94*
@@ -34,6 +38,8 @@ Languages |C++, C, Java, AWS
 Role: Create relevant test codes, improve UI in github pages, translate documentation
 
 
+
+
 *  **Hyung Jun Chang** *hyungjc*
 
 Category | list
@@ -42,6 +48,8 @@ Interest | Data Science
 Languages | C, C++, Java, MySQL
 
 Role: Create relevant test codes, translate documentation
+
+
 
 
 ## Current project: pytest
