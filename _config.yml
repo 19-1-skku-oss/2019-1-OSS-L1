@@ -15,10 +15,10 @@
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "Koera"
+locale                   : "Republic of Korea"
 title                    : "2019 OSS Lab"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "L1 Team"
 description              : "An amazing website."
 url                      : "https://19-1-skku-oss.github.io"
 baseurl                  : "/2019-1-OSS-L1"
