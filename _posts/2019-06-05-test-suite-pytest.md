@@ -1,5 +1,5 @@
 ---
-title: "기존 시험장에서의 pytest"
+title: "기존의 시험장(test suite)에서의 pytest"
 date: 2019-06-05 08:26:28 -0400
 categories:
   - pytest document
@@ -8,8 +8,6 @@ sidebar:
 ---
 <br>
 
-
-# 기존의 시험장(test suite)에서의 pytest
 
 pytest는 대부분의 기존 시험장을 사용할 수 있습니다. 하지만 pytest는 [nose]("chapter_16")나 다른 Python의 기본적인 unittest framework와는 다르게 작동합니다.
 
