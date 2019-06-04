@@ -1,5 +1,7 @@
 ---
 title: "team introduce"
+header:
+  image: pytest.png
 date: 2017-10-20 08:26:28 -0400
 categories: team_project
 ---

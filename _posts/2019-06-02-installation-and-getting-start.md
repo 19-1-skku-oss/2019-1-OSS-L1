@@ -1,6 +1,7 @@
 ---
 title: "설치 및 실행"
 date: 2019-06-02 08:26:28 -0400
+layour: single
 categories:
   - pytest document
 sidebar:
