@@ -55,7 +55,6 @@ Role: Create relevant test codes, translate documentation
 - [Pytest](https://github.com/pytest-dev/pytest/labels/status%3A%20easy) _(label: status: easy)_ <br> The pytest framework makes it easy to write small tests, yet scales to support complex functional testing.
 
 
-***
 
 
 ## 3. Screenshots
