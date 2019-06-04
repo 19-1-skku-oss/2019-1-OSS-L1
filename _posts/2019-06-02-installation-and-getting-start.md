@@ -1,5 +1,5 @@
 ---
-title: "1. 설치 및 실행"
+title: "설치 및 실행"
 date: 2019-06-02 08:26:28 -0400
 categories:
   - pytest document

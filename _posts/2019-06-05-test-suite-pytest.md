@@ -1,14 +1,11 @@
 ---
-title: "3. 기존 시험장에서의 pytest"
+title: "기존의 시험장(test suite)에서의 pytest"
 date: 2019-06-05 08:26:28 -0400
 categories:
   - pytest document
 sidebar:
   nav: "docs"
 ---
-
-# 기존의 시험장(test suite)에서의 pytest
-
 pytest는 대부분의 기존 시험장을 사용할 수 있습니다. 하지만 pytest는 [nose]("chapter_16")나 다른 Python의 기본적인 unittest framework와는 다르게 작동합니다.
 
 이후의 내용을 위해 먼저 [pytest를 설치]("https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/doc/kr/1.%20installation%20and%20getting%20start.md")해주세요.
