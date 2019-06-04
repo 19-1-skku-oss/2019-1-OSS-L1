@@ -3,7 +3,7 @@
 Homepage: https://19-1-skku-oss.github.io/2019-1-OSS-L1/
 
 ## Teammates
-### - **Minjong Yoo** *mjyoo2*
+### - **Minjong Yoo** / *mjyoo2*
 
 Category | list
 -------- | ------
@@ -13,7 +13,7 @@ Languages | C, Python
 Role: Manage github static page, guide documentation translation project
 
 
-### - **Jaeyoung Cho** *Joeycho*
+### - **Jaeyoung Cho** / *Joeycho*
 
 Category | list
 -------- | ------
@@ -24,9 +24,7 @@ Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
 Role: Create relevant test codes, translate documentation, contribute directly to the main open source project
 
 
-
-
-### - **Martina Lee♥** *martinalee94*
+### - **Martina Lee♥** / *martinalee94*
 
 Category | list
 -------- | ------
@@ -36,9 +34,7 @@ Languages |C++, C, Java, AWS
 Role: Create relevant test codes, improve UI in github pages, translate documentation
 
 
-
-
-### - **Hyung Jun Chang** *hyungjc*
+### - **Hyung Jun Chang** / *hyungjc*
 
 Category | list
 -------- | ------
