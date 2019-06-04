@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "OSS L1"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /images/team_L1.jpg
   bio              : "The aim is exploring open source project and participating it and being active!"
   location         : "SKKU"
   email            :
