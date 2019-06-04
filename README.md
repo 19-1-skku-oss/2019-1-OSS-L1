@@ -3,7 +3,7 @@
 Homepage: https://19-1-skku-oss.github.io/2019-1-OSS-L1/
 
 ## Teammates
-< Minjong Yoo > 
+< Minjong Yoo (myjoo2) > 
 
 Category | list
 -------- | ------
@@ -13,7 +13,7 @@ Languages | C, Python
 
 Role: Manage github static page, guide documentation translation project
 
-< Jaeyoung Cho >
+< Jaeyoung Cho (Joeycho) >
 
 ![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_first_one.PNG)
 
@@ -26,7 +26,7 @@ Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
 
 Role: Create relevant test codes, translate documentation, contribute directly to the main open source project
 
-< Martina Lee♥ >
+< Martina Lee♥ (martinalee94) >
 
 ![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/martina/testing_martina/11.JPG)
 
@@ -38,7 +38,7 @@ Languages |C++, C, Java, AWS
 
 Role: Create relevant test codes, improve UI in github pages, translate documentation
 
-< Hyung Jun Chang >
+< Hyung Jun Chang (hyungjc) >
 
 ![pytest](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/pytest_w_test.png)
 pytest when python.py contains the function name test
