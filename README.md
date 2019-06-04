@@ -9,10 +9,9 @@ Category | list
 -------- | ------
 Interest | Python, Reinforcement learning
 Languages | C, Python
-<br> 
 
 Role: Manage github static page, guide documentation translation project
-
+</br>
 
 * **Jaeyoung Cho** *Joeycho*
 
@@ -21,10 +20,9 @@ Category | list
 Interest | Cross-platform, Machine Learning, Web development
 Frameworks | Ruby on Rails, Sinatra, Android
 Languages | Ruby, HTML, CSS, XML, C++, C, Java, Python, Kotlin
-<br> 
 
 Role: Create relevant test codes, translate documentation, contribute directly to the main open source project
-
+</br>
 
 * **Martina Lee♥** *martinalee94*
 
@@ -32,10 +30,9 @@ Category | list
 -------- | ------
 Interest | IOT, Fintech
 Languages |C++, C, Java, AWS
-<br> 
 
 Role: Create relevant test codes, improve UI in github pages, translate documentation
-
+</br>
 
 *  **Hyung Jun Chang** *hyungjc*
 
@@ -43,10 +40,9 @@ Category | list
 -------- | ------
 Interest | Data Science
 Languages | C, C++, Java, MySQL
-<br> 
 
 Role: Create relevant test codes, translate documentation
-
+</br>
 
 ## Current project: pytest
 
