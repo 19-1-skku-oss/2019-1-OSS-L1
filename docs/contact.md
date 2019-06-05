@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Members
-header:
-  image: assets/img/team_L1.jpg
 permalink: /contact/
 ---
 
