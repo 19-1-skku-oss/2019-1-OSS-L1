@@ -10,7 +10,8 @@ However, you can use free SaaS as a backend for forms, such as [Formspree](https
 
 Check the form below to see it in action!
 
-### Example Formspree contact form with validation and reCaptcha
+
+### Feel free to reach out to us!:)
 
 Fill in the form or [email me](mailto:{{site.email}}) to discuss your next project.
 
