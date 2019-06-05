@@ -30,7 +30,10 @@
   min-height: 8.75rem;
   width: 100%;
   position: relative;
-  background-color: $dark-light;
+  /* background-color: $dark-light; */
+  background: transparent;
+  background-image: url(https://19-1-skku-oss.github.io/2019-1-OSS-L1/assets/img/team_L1.jpg);
+  background-size: contain;
 
   @include breakpoint($lg) {
     height: 12.5em;
