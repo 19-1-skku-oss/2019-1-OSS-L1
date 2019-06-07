@@ -7,7 +7,7 @@ sidebar:
   nav: "docs"
 ---
 
-[test fixture 를 쓰는 목적](https://en.wikipedia.org/wiki/Test_fixture#Software)은 테스트가 안정적이고 반복적으로 실행될 수 잇는 고정된 기준점을 제공하는 것입니다. pytest fixture는 고전적인 xUnit 스타일의 설정/해제 기능을 극적으로 향상시킵니다.
+[test fixture를 쓰는 목적](https://en.wikipedia.org/wiki/Test_fixture#Software)은 테스트가 안정적이고 반복적으로 실행될 수 잇는 고정된 기준점을 제공하는 것입니다. pytest fixture는 고전적인 xUnit 스타일의 설정/해제 기능을 극적으로 향상시킵니다.
 - fixture는 명시적인 이름을 가지며, 테스트 함수, 모듈, class, 혹은 전체 프로젝트에서 사용을 선언함으로써 활성화됩니다.
 - fixture는 모듈화 방식으로 구현됩니다. 각 fixture의 이름은 다른 fixture에서 사용 가능하도록 fixture 함수를 만들어냅니다.
 - fixture 관리는 단순한 단위에서 복잡한 기능 테스트에 이르기까지 다양하며 구성 및 구성 요소 옵션에 따라 fixture 및 테스트를 매개 변수화하거나 함수, 클래스, 모듈 또는 전체 테스트 session 범위에서 fixture를 재사용 할 수 있습니다.
