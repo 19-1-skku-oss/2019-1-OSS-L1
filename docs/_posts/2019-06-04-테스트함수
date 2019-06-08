@@ -1,0 +1,48 @@
+---
+layout: post
+title: "테스트 함수와 변수에 대한 마킹"
+featured-img: shane-rounce-205187
+---
+
+#테스트 함수와 변수에 대한 마킹
+
+`pytest.mark` 도우미를 사용하여 테스트 함수에 메타 데이터를 쉽게 설정할 수 있습니다. 몇 가지 기본 마커를 소개하자면 다음과 같습니다:
+- `skip`: 언제나 이 테스트 함수를 뛰어 넘습니다.
+- `skipif` : 어떠한 특정한 조건일 때 이 함수를 뛰어 넘습니다.
+- `xfail` 어떠한 특정한 조건일 때 의도적인 실패를 표시합니다.
+- `parametrize` 같은 테스트 함수를 여러번 호출하여 실행합니다.
+
+사용자 정의 마커를 작성하거나 전체 테스트 클래스 또는 모듈에 마커를 적용하는 것은 쉽습니다. 이러한 마커는 플러그인에서 사용할 수 있으며 일반적으로 `-m` 옵션을 사용하여 command-line에서 테스트를 선택하는 데 사용됩니다.
+
+마커의 등록
+---
+`pytest.ini`파일에 다음과 같이 마커를 등록 할 수 있습니다.
+```
+[pytest]
+markers =
+	slow: marks tests as slow (deselect with '-m "not slow"')
+	serial
+```
+뒤에 붙이는 : 는 선택적인 설명 입니다.
+
+또는 `pytest_configure` hook에 프로그래밍 방식으로 새 마커를 등록 할 수 있습니다.
+```python
+def pytest_configure(config):
+	config.addinivalue_line(
+		"markers", "env(name): mark test to run only on named environment"
+)
+```
+등록 된 마커는 pytest의 도움말 텍스트에 나타나며 경고를 표시하지 않습니다. 타사 플러그인은 항상 마커를 등록하는 것이 좋습니다.
+
+
+알 수 없는 표시에 대한 오류의 발생
+---
+`@pytest.mark.name_of_the_mark` 데코레이터로 등록되지 않은 표시는 잘못된 유형의 이름으로 인해 문제될 일을 자동으로 피하기 위해 항상 경고를 내보냅니다. 이전 섹션에서 설명한 것처럼 `pytest.ini` 파일에 사용자 정의 마크를 등록하거나 사용자 정의 `pytest_configure` hook를 사용하여 사용자 정의 마크에 대한 경고를 비활성화 할 수 있습니다.
+`--strict-marker` 명령 줄 플래그가 전달되면 `@pytest.mark.name_of_the_mark` 데코레이터가 적용되어 알 수 없는 표시가 오류를 유발합니다. `addopts`에 `--strict-marker`를 추가하여 프로젝트에서 유효성 검사를 시행할 수 있습니다.
+```
+[pytest]
+addopts = --strict-markers
+markers =
+	slow: marks tests as slow (deselect with '-m "not slow"')
+	serial
+```
