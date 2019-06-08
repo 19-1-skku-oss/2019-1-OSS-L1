@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started-Pytest
-featured-img: pytest.png
+featured-img: pytest
 ---
 
 
