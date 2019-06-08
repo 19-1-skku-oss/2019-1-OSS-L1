@@ -4,7 +4,7 @@ title: Members
 permalink: /contact/
 ---
 
-<img src ="{{site.url}}/assets/img/team_L1.jpg">
+<img src ="{{site.url}}/assets/img/team_L1.jpg" width="400" height="400">
 
 
 
