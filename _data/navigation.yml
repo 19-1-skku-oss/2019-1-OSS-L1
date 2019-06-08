@@ -1,4 +1,4 @@
-# main links
+﻿# main links
 main:
   - title: "Team member"
     url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/team_project/first-post/
@@ -20,3 +20,5 @@ docs:
         url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest%20document/pytest-fixture/
       - title: "pytest fixtrue(2)"
         url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest%20document/pytest-fixture(2)/
+      - title: "pytest fixtrue(3)"
+        url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/pytest%20document/pytest-fixture(3)/
