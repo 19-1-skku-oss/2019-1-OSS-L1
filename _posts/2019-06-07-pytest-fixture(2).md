@@ -1,6 +1,6 @@
 ---
 title: "pytest fixture(2)"
-date: 2019-06-04 08:26:28 -0400
+date: 2019-06-07 08:26:28 -0400
 categories:
   - pytest document
 sidebar:
