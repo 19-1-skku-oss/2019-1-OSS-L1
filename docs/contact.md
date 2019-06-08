@@ -8,13 +8,13 @@ permalink: /contact/
 
 
 
-이영숙 2014314433
+이영숙 2014314433 <br>
 martinalee0528@gmail.com
 
-장형준 2017314956 
+장형준 2017314956 <br>
 hyungjunchang@gmail.com
 
-조재영 2011311347
+조재영 2011311347 <br>
 joeyadamcho@gmail.com
 
 
