@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-<img src ="{{site.url}}/assets/img/posts/pytest.png">
+<center><img src ="{{site.url}}/assets/img/posts/pytest.png"></center>
 
 
 The pytest framework makes it easy to write small tests, yet scales to support complex functional testing.<br>
