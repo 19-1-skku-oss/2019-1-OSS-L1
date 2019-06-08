@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The writing and reporting of assertions in tests"
-summary: How to use assertions(assert) in pytest
+summary: Chapter 4
 ---
 
 ## 4.1 Asserting with the assert statement
