@@ -8,6 +8,16 @@ permalink: /contact/
 
 
 
+이영숙 2014314433
+martinalee0528@gmail.com
+
+장형준 2017314956 
+hyungjunchang@gmail.com
+
+조재영 2011311347
+joeyadamcho@gmail.com
+
+
 ### Feel free to reach out to us!:)
 
 Fill in the form or [email me](mailto:{{site.email}}) to discuss your next project.
