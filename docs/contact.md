@@ -7,6 +7,8 @@ permalink: /contact/
 <img src ="{{site.url}}/assets/img/team_pic.png" width="50%">
 
 
+유민종 <br>
+
 
 이영숙 2014314433 <br>
 martinalee0528@gmail.com
