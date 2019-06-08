@@ -1,0 +1,15 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.sidebar {
+    margin-top: 5em;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "sidebar post-list";
+}
