@@ -116,6 +116,7 @@ Here is the full list of available characters that can be used:
 - a - all except pP
 - A - all
 More than one character can be used, so for example to only see failed and skipped tests, you can execute:
+
 ```
 $ pytest -rfs
 =========================== test session starts ============================
