@@ -23,7 +23,7 @@ docs:
         url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/pytest-fixture(2)/
       - title: "pytest fixtrue(3)"
         url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/pytest-fixture(3)/
-      - title: "Monkeypatching/mocking modules and environments'
+      - title: "Monkeypatching mocking modules and environments"
         url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/monkeypatching-mocking-modules-and-environments/
       - title: "Temporary directories and files"
         url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/temporary-directories-and-files/
