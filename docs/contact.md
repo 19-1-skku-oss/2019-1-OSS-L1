@@ -3,21 +3,26 @@ layout: page
 title: Members
 permalink: /contact/
 ---
-
+<div class="team_img">
 <img src ="{{site.url}}/assets/img/team_small.png">
+</div>
 
-
-유민종 2017314749 <br>
-mjyoo2@g.skku.edu
-
-이영숙 2014314433 <br>
-martinalee0528@gmail.com
-
-장형준 2017314956 <br>
-hyungjunchang@gmail.com
-
-조재영 2011311347 <br>
-joeyadamcho@gmail.com
+<li>
+  유민종 2017314749 <br>
+  mjyoo2@g.skku.edu
+</li>
+<li>
+  이영숙 2014314433 <br>
+  martinalee0528@gmail.com
+</li>
+<li>
+  장형준 2017314956 <br>
+  hyungjunchang@gmail.com
+</li>
+<li>
+  조재영 2011311347 <br>
+  joeyadamcho@gmail.com
+</li>
 
 <br>
 <br>
