@@ -7,8 +7,9 @@ featured-img: code2
 
 
 ## 8.1 The tmp_path fixture
-tmp_path fixture 를 사용해서 테스트를 부르는데 임시 주소를 제공합니다.
-tmp_path는 pathlib/pathlib2.Path object입니다. 예시: 
+You can use the tmp_path fixture which will provide a temporary directory unique to the test invocation, created in
+the base temporary directory.
+tmp_path is a pathlib/pathlib2.Path object. Here is an example test usage:
 
 ```python
 # content of test_tmp_path.py
@@ -26,7 +27,7 @@ def test_create_file(tmp_path):
     assert 0
 ```
 
-위 코드를 pytest로 테스트한 결과:
+Running this would result in a passed test except for the last assert 0 line which we use to look at values:
 ```
 $ pytest test_tmp_path.py
 =========================== test session starts ============================
@@ -54,8 +55,9 @@ test_tmp_path.py:13: AssertionError
 ```
 
 ## 8.2 The tmp_path_factory fixture
-tmp_path_factory는 다른 테스트나 fixture로 부터 임의적인 임시 주소를 만드는데 사용되는 fixture입니다.
-이것은 tmpdir_factory를 다른 곳에 위치 시키고,  pathlib.Path instances 반환하게 하기 위함입니다.
+The tmp_path_factory is a session-scoped fixture which can be used to create arbitrary temporary directories
+from any other fixture or test.
+It is intended to replace tmpdir_factory, and returns pathlib.Path instances.
 
 ```python
 # contents of conftest.py
@@ -76,9 +78,9 @@ def test_histogram(image_file):
 
 
 ## 8.3 The ‘tmpdir’ fixture
-the tmpdir fixture는 테스트를 부를 때마다 고유의 임시 주소를 제공하고 기본 임시 주소에 만들어지는 fixture입니다.
-tmpdir 는 os.path methods와 기타 다른 기능을 제공하는 py.path.local 오브젝트입니다
-예시:
+You can use the tmpdir fixture which will provide a temporary directory unique to the test invocation, created in the
+base temporary directory.
+tmpdir is a py.path.local object which offers os.path methods and more. Here is an example test usage:
 
 ```python
 # content of test_tmpdir.py
@@ -91,7 +93,7 @@ def test_create_file(tmpdir):
     assert 0
 ```
 
-위 코드를 pytest로 실행한 결과:
+Running this would result in a passed test except for the last assert 0 line which we use to look at values:
 ```
 $ pytest test_tmpdir.py
 =========================== test session starts ============================
@@ -119,9 +121,10 @@ test_tmpdir.py:7: AssertionError
 
 
 ## 8.4 The default base temporary directory
-임시 주소는 기본적으로 시스템 임시 주소 안에 서브 다이렉토리로 만들어집니다. 기본 이름은 pytest-NUM이고 'NUM'의 경우 하나의 테스트를 실행할 때마다 증가됩니다.
-세 개 임시주소 이상을 가지고 있다면 주소가 모두 지워집니다. 
-기본 임시 주소를 오버라이드 해서 사용할 수 있습니다:
+Temporary directories are by default created as sub-directories of the system temporary directory. The base name
+will be pytest-NUM where NUM will be incremented with each test run. Moreover, entries older than 3 temporary
+directories will be removed.
+You can override the default temporary directory setting like this:
 
 ```python
 pytest --basetemp=mydir
