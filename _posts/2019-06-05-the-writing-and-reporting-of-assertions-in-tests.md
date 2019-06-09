@@ -1,13 +1,13 @@
 ---
-title: "The writing and reporting of assertions in tests"
-date: 2019-06-03 08:26:28 -0400
+title: "테스트에서의 assertion의 작성과 보고"
+date: 2019-06-05 00:26:28 -0400
 categories:
   - pytest document
 sidebar:
   nav: "docs"
 ---
 
-## 4.1 Asserting with the assert statement
+## 4.1 테스트에서의 assertion의 작성과 보고
 
 기존 Python의 'assert' 명령어를 Pytest에서도 사용 가능합니다.
 다음 예제 코드에서 assert명령을 사용함으로써 함수가 특정값을 리턴한다는 것을 확인합니다.
