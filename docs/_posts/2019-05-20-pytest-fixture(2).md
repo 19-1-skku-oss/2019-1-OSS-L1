@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "pytest fixture(2)"
-featured-img: shane-rounce-205187
+summary: Chapter 5-2
+featured-img: 
 ---
 
 Fixture 종료/ teardown 코드 실행

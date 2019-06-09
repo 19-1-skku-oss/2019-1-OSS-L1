@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Usage and Invocations"
+title: "Usage and Invocations(1)"
 summary: Chapter 2
 ---
 

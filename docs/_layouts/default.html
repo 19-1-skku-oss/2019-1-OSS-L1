@@ -29,7 +29,8 @@ layout: compress
       <section class="blog">
          <!-- {% include sidebar.html %} -->
         <div class="container">
-          {% include sidebar.html %}
+        <div class="wrapper">
+         {% include sidebar.html %}
           <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
 
             {% for post in site.posts %}
@@ -37,6 +38,7 @@ layout: compress
             {% endfor %}
 
             <!-- {% include pagination.html %} -->
+          </div>
           </div>
         </div>
       </section>
