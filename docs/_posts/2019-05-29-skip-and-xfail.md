@@ -4,7 +4,7 @@ title: "Skip and xfail: dealing with tests that cannot succeed"
 summary: Chapter 12
 featured-img: skip
 ---
-## Chapter 12 Summary
+## Chapter 12 Introduction
 
 You can mark test functions that cannot be run on certain platforms or that you expect to fail so pytest can deal with
 them accordingly and present a summary of the test session, while keeping the test suite green.
@@ -133,6 +133,7 @@ pytestmark = pytest.mark.skipif(sys.platform == "win32", reason="tests for
 ```python
 pexpect = pytest.importorskip("pexpect")
 ```
+
 ## 12.2 XFail: mark test functions as expected to fail
 You can use the xfail marker to indicate that you expect a test to fail:
 ```python
