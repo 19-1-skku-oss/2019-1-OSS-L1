@@ -174,7 +174,7 @@ Note that this command omits fixtures with leading _ unless the `-v` option is a
 ---
 Check out additional pytest resources to help you customize tests for your unique workflow:
 - “[Calling pytest through python -m pytest]("chapter_2”)” for command line invocation examples
-- “[Using pytest with an existing test suite("chapter_3")]" for working with pre-existing tests
+- “[Using pytest with an existing test suite]("chapter_3")” for working with pre-existing tests
 - “[Marking test functions with attributes]("chapter_6")” for information on the pytest.mark mechanism
 - “[pytest fixtures: explicit, modular, scalable]("chapter_5")” for providing a functional baseline to your tests
 - “[Writing plugins]("chapter_19")” for managing and writing plugins
