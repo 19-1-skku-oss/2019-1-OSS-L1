@@ -2,6 +2,7 @@
 layout: post
 title: "The writing and reporting of assertions in tests"
 summary: Chapter 4
+featured-img: hacking
 ---
 
 ## 4.1 Asserting with the assert statement
