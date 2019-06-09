@@ -1,6 +1,6 @@
 ---
 title: "Monkeypatching/mocking modules and environments"
-date: 2019-06-08 10:26:28 -0400
+date: 2019-06-07 10:26:28 -0400
 categories:
   - pytest document
 sidebar:
