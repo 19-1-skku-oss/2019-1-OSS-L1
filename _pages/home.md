@@ -23,7 +23,7 @@ feature_row:
     title: "github 저장소"	
     excerpt: "우리가 지금까지 해온 활동이 이 곳에 있습니다."	
     url: "https://github.com/19-1-skku-oss/2019-1-OSS-L1"	
-    btn_label: "github 저"
+    btn_label: "github 저장소"
 ---	
 
  {% include feature_row id="intro" type="center" %}	
