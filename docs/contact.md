@@ -7,8 +7,8 @@ permalink: /contact/
 <img src ="{{site.url}}/assets/img/team_small.png">
 
 
-유민종 <br>
-
+유민종 2017314749 <br>
+mjyoo2@g.skku.edu
 
 이영숙 2014314433 <br>
 martinalee0528@gmail.com
