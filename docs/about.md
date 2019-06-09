@@ -7,7 +7,7 @@ permalink: /about/
 
 <center><img src ="{{site.url}}/assets/img/posts/pytest.png"></center>
 
-
+<br>
 The pytest framework makes it easy to write small tests, yet scales to support complex functional testing.<br>
 Simply read the guide on how to [get started](/2019-1-OSS-L1/getting-started)
 
