@@ -229,10 +229,8 @@ If this is the case you have two options:
 - Disable rewriting for a specific module by adding the string PYTEST_DONT_REWRITE to its docstring.
 - Disable rewriting for all modules by using --assert=plain.
    
-   Add assert rewriting as an alternate introspection technique.
- 
-   Introduce the --assert option. Deprecate --no-assert and --nomagic.
-   
-   Removes the --no-assert and --nomagic options. Removes the --assert=reinterp
-   option.
+     - Add assert rewriting as an alternate introspection technique.
+     - Introduce the --assert option. Deprecate --no-assert and --nomagic.
+     - Removes the --no-assert and --nomagic options. Removes the --assert=reinterp
+     option.
 
