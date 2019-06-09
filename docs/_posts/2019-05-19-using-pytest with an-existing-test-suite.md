@@ -2,7 +2,7 @@
 layout: post
 title: Using pytest with an existing test suite
 summary: Chapter 3
-
+featured-img: entrepreneur
 ---
 
 # 기존의 시험장(test suite)에서의 pytest
