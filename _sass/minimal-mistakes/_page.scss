@@ -182,8 +182,11 @@
 }
 
 .page__hero-image {
-  width: 100%;
+  width: auto;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   -ms-interpolation-mode: bicubic;
 }
 
