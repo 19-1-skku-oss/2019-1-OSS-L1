@@ -1,6 +1,5 @@
 ---
 title: "pytest fixture(3)"
-layout: post
 date: 2019-06-08 08:26:28 -0400
 categories:
   - pytest document
