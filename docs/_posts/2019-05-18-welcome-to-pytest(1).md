@@ -29,6 +29,8 @@ Running pytest can result in six different exit codes:
 - Exit code 3 Internal error happened while executing tests
 - Exit code 4 pytest command line usage error
 - Exit code 5 No tests were collected
+<br>
+<br>
 
 
 ## Getting help on version, option names, environment variables
@@ -45,10 +47,12 @@ To stop the testing process after the first (N) failures:
 pytest -x            # stop after first failure
 pytest --maxfail=2    # stop after two failures
 ```
+<br>
+<br>
+
+
 ## Specifying tests / selecting tests
 Pytest supports several ways to run and select tests from the command-line.
-<br>
-<br>
 
 #### Run tests in a module
 
@@ -90,9 +94,12 @@ pytest test_mod.py::TestClass::test_method
 pytest -m slow
 ```
 Will run all tests which are decorated with the @pytest.mark.slow decorator
-<br>
-<br>
-<br>
+For more information see marks.
+#### Run tests from packages
+```
+pytest --pyargs pkg.testing
+```
+This will import pkg.testing and use its filesystem location to find and run tests from.
 
 
 
