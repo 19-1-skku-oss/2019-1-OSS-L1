@@ -2,7 +2,7 @@
 layout: post
 title: "pytest fixture(2)"
 summary: Chapter 5-2
-featured-img: 
+featured-img: code
 ---
 
 Fixture 종료/ teardown 코드 실행
