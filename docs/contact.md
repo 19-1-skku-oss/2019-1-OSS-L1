@@ -3,10 +3,10 @@ layout: page
 title: Members
 permalink: /contact/
 ---
-<div class="team_img">
+<div class="team_info">
 <img src ="{{site.url}}/assets/img/team_small.png">
-</div>
-
+<br>
+<br>
 <li>
   유민종 2017314749 <br>
   mjyoo2@g.skku.edu
@@ -29,6 +29,7 @@ permalink: /contact/
   조재영 2011311347 <br>
   joeyadamcho@gmail.com
 </li>
+</div>
 
 <br>
 <br>
