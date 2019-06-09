@@ -2,7 +2,7 @@
 layout: post
 title: "Skip and xfail: dealing with tests that cannot succeed"
 summary: Chapter 12
-featured-img: temp
+featured-img: skip
 ---
 ## Chapter 12 Summary
 
