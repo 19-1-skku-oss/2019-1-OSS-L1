@@ -10,7 +10,7 @@ docs:
       - title: "설치 및 실행"
         url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/installation-and-getting-start/
       - title : "사용법 그리고 실행방법(1)"
-        url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/Usage-and-invocation(1)/
+        url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/Usage-and-invocation/
       - title : "사용법 그리고 실행방법(2)"
         url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/Usage-and-invocation(2)/
       - title : "테스트에서의 assertion의 작성과 보고"
