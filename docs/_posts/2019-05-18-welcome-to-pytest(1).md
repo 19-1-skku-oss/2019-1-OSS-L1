@@ -30,10 +30,6 @@ Running pytest can result in six different exit codes:
 - Exit code 4 pytest command line usage error
 - Exit code 5 No tests were collected
 
-<br>
-<br>
-
-
 
 ## Getting help on version, option names, environment variables
 
@@ -51,10 +47,6 @@ pytest --maxfail=2    # stop after two failures
 ```
 ## Specifying tests / selecting tests
 Pytest supports several ways to run and select tests from the command-line.
-
-<br>
-<br>
-
 
 
 #### Run tests in a module
