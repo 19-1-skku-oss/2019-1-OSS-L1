@@ -18,7 +18,7 @@ feature_row:
     excerpt: "we translate pytest document!"	
     url: "https://mjyoo2.github.io/pytest_document_KR/categories/pytest-document/"	
     btn_label: "see more"	
-  - image_path: images/github.png
+  - image_path: images/github2.png
     alt: "Our repository"	
     title: "Our repository"	
     excerpt: "We contribute our project"	
