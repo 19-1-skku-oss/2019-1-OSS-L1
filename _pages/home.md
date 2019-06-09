@@ -24,12 +24,6 @@ feature_row:
     excerpt: "We contribute our project"	
     url: "https://19-1-skku-oss.github.io/2019-1-OSS-L1/"	
     btn_label: "see more"
-  - image_path: images/github2.png
-    alt: "Our repository"	
-    title: "Our repository"	
-    excerpt: "We contribute our project"	
-    url: "https://mjyoo2.github.io/pytest_document_KR/team_project/first-post"	
-    btn_label: "see more"	
 ---	
 
  {% include feature_row id="intro" type="center" %}	
