@@ -2,6 +2,7 @@
 layout: post
 title: Pytest fixture(1)
 summary: Chapter 5-1
+featured-img: code
 ---
 #pytest fixture
 
