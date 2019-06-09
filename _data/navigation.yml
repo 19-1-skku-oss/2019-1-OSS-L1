@@ -1,3 +1,8 @@
+# main links	
+main:	
+  - title: "English Page"	
+    url: https://19-1-skku-oss.github.io/2019-1-OSS-L1/
+
 # docs links
 docs:
   - title: pytest document
