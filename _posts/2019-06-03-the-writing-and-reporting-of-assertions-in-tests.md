@@ -1,6 +1,6 @@
 ---
 title: "The writing and reporting of assertions in tests"
-date: 2019-06-05 08:26:28 -0400
+date: 2019-06-03 08:26:28 -0400
 categories:
   - pytest document
 sidebar:
