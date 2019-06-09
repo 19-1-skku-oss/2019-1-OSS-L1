@@ -5,12 +5,17 @@ summary: Chapter 2
 featured-img: sleek
 ---
 
-# 사용법 그리고 실행방법
+# Usage and Invocations
 
-Terminal command로 python을 이용하더라도, -m 옵션 flag를 통해 pytest를 실행할 수 있습니다.
-: python -m pytest
+## Calling pytest through python -m pytest
 
-python -m pytest가 현재 위치의 directory를 sys.path에 저장한다는 사실 이외에는 사실상 pytest 명령어와 다를 것이 없습니다.
+You can invoke testing through the Python interpreter from the command line:
+```
+python -m pytest [...]
+```
+
+This is almost equivalent to invoking the command line script pytest [...] directly, except that calling via
+python will also add the current directory to sys.path.
 <br>
 <br>
 
