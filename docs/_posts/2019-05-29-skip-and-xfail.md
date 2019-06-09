@@ -48,27 +48,6 @@ import pytest
 if not sys.platform.startswith("win"):
 pytest.skip("skipping windows-only tests", allow_module_level=True)
 ```
-## 8.2 The tmp_path_factory fixture
-tmp_path_factory는 다른 테스트나 fixture로 부터 임의적인 임시 주소를 만드는데 사용되는 fixture입니다.
-이것은 tmpdir_factory를 다른 곳에 위치 시키고,  pathlib.Path instances 반환하게 하기 위함입니다.
-
-```python
-# contents of conftest.py
-
-import pytest
-@pytest.fixture(scope="session")
-  def image_file(tmpdir_factory):
-      img = compute_expensive_image()
-      fn = tmpdir_factory.mktemp("data").join("img.png")
-      img.save(str(fn))
-      return fn
-# contents of test_image.py
-def test_histogram(image_file):
-    img = load_image(image_file)
-    # compute and test histogram
-
-```
-
 ### 12.1.1 skipif
 
 If you wish to skip something conditionally then you can use skipif instead. Here is an example of marking a test
