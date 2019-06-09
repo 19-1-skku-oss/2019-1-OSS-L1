@@ -17,7 +17,6 @@ python -m pytest [...]
 This is almost equivalent to invoking the command line script pytest [...] directly, except that calling via
 python will also add the current directory to sys.path.
 <br>
-<br>
 
 
 ## Possible exit codes
@@ -30,8 +29,6 @@ Running pytest can result in six different exit codes:
 - Exit code 4 pytest command line usage error
 - Exit code 5 No tests were collected
 <br>
-<br>
-
 
 ## Getting help on version, option names, environment variables
 
@@ -48,8 +45,6 @@ pytest -x            # stop after first failure
 pytest --maxfail=2    # stop after two failures
 ```
 <br>
-<br>
-
 
 ## Specifying tests / selecting tests
 Pytest supports several ways to run and select tests from the command-line.
