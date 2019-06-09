@@ -21,6 +21,5 @@ Also, Pytest provides a very helpful document :
 For other project list refer here:
 [List](https://github.com/MunGell/awesome-for-beginners)
 
-<br>
 
 freely distributed under the terms of the [MIT License](https://github.com/19-1-skku-oss/2019-1-OSS-L1/blob/master/LICENSE)
