@@ -2,6 +2,7 @@
 layout: post
 title: "Usage and Invocations(1)"
 summary: Chapter 2
+featured-img: sleek
 ---
 
 # 사용법 그리고 실행방법
