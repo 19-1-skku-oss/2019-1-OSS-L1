@@ -1,7 +1,6 @@
 ---
 title: "pytest fixture(3)"
 date: 2019-06-08 08:26:28 -0400
-layout: post
 categories:
   - pytest document
 sidebar:
