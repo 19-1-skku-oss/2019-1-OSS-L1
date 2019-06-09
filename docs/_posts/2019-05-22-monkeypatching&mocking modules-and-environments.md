@@ -5,11 +5,8 @@ summary: Chapter 7
 featured-img: startup
 ---
 
-
-Sometimes tests need to invoke functionality which depends on global settings or which invokes code which cannot be
-easily tested such as network access. The monkeypatch fixture helps you to safely set/delete an attribute, dictionary
-item or environment variable or to modify sys.path for importing. See the monkeypatch blog post for some
-introduction material and a discussion of its motivation.
+종종 테스트를 진행할 때 글로벌 세팅이나 네트워크 접근과 같은 상황에서 코드를 불러 와야하는 어려운 상황이 있습니다.<br>
+Pytest에서 제공하는 The monkeypatch fixture 는 이를 불러 오는데에 큰 역할을 합니다.
 
 
 ## 7.1 monkeypatching functions의 간단한 예제
