@@ -2,7 +2,7 @@
 layout: post
 title: "Temporary directories and files"
 summary: Chapter 8
-featured-img:
+featured-img: code2
 ---
 
 
