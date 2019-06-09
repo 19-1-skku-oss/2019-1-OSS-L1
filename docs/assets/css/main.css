@@ -13,3 +13,11 @@
     grid-template-areas: "sidebar post-list";
 }
 
+.team_info img {
+    width: 70%;
+}
+.team_info {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
