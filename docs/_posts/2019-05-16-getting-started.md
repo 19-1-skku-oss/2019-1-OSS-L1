@@ -6,23 +6,28 @@ featured-img: children
 ---
 
 
-# 설치와 실행
+# Installation and Getting Started
 
 Pythons: Python 2.7, 3.4, 3.5, 3.6, 3.7, Jython, PyPy-2.3
-Platforms: Unix/Posix and Windows
-PyPI 패키지 이름: pytest
-PDF 다운로드: [최신 버전 다운로드](https://docs.pytest.org/en/latest/contents.html)
 
-pytest는 간단하고 확장가능한 테스팅을 지원하는 framework입니다. 테스트는 읽을 수 있는 형태로 표현되어지므로 boilerplate 코드가 필요하지 않습니다. 몇분만에 당신의 프로그램 혹은 라이브러리를 위한 단순하거나 복잡한 테스트를 시작하세요.
+Platforms: Unix/Posix and Windows
+
+PyPI package name: pytest
+
+Documentation as PDF: [download latest](https://docs.pytest.org/en/latest/contents.html)
+
+pytest is a framework that makes building simple and scalable tests easy. Tests are expressive and readable—no
+boilerplate code required. Get started in minutes with a small unit test or complex functional test for your application
+or library.
 <br>
 
-1.1 pytest 설치
+1.1 Install pytest
 ---
-1. 당신의 명령창에 다음과 같은 명령을 실행시키세요.
+1. Run the following command in your command line:
 ```
 pip install -U pytest
 ```
-2. 설치를 확인하고 버전을 확인하세요
+2. Check that you installed the correct version:
 ```
 $ pytest --version
 This is pytest version 4.x.y, imported from $PYTHON_PREFIX/lib/python3.6/site-
@@ -30,9 +35,9 @@ This is pytest version 4.x.y, imported from $PYTHON_PREFIX/lib/python3.6/site-
 ```
 <br>
 
-1.2 첫 테스트 생성
+1.2 Create your first test
 ---
-다음과 같은 간단한 테스트 함수를 생성하세요.
+Create a simple test function with just four lines of code:
 ```python
 # content of test_sample.py
 def func(x):
@@ -40,7 +45,7 @@ def func(x):
 def test_answer():
 	assert func(3) == 5
 ```
-이제 당신은 테스트 함수를 실행시킬 수 있습니다.
+That’s it. You can now execute the test function:
 ```
 $ pytest
 =========================== test session starts ============================
@@ -60,20 +65,20 @@ E 		+ where 4 = func(3)
 test_sample.py:5: AssertionError
 ========================= 1 failed in 0.12 seconds =========================
 ```
-func(3)이 5를 반환하지 않기 때문에, 위의 테스트는 실패를 보고합니다.
+This test returns a failure report because func(3) does not return 5.
 
-
->주의: 테스트에서의 원하는 값을 확인하기 위해 `assert`구문을 사용할 수 있습니다. pytest의 [Advanced assertion introspection](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement)은 지능적으로 assert 구문의 중간 내용을 보고합니다. 그래서, 당신은 많은 이름 붙여진 [JUnit legacy methods](https://docs.python.org/3/library/unittest.html#test-cases)를 피할 수 있습니다.
+>Note: You can use the assert statement to verify test expectations. pytest’s [Advanced assertion introspection](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement) will intelligently report intermediate values of the assert expression so you can avoid the many names of [JUnit legacy methods](https://docs.python.org/3/library/unittest.html#test-cases)
 <br>
 
-1.3 여러 테스트 실행
+1.3 Run multiple tests
 ---
-pytest는 현재 directory와 그 내부의 directory 에서 test_*.py 혹은 *_test.py라는 이름을 가진 모든 파일을 실행합니다. 좀 더 일반적으로는, [standard test discovery rules]("chapter_23.2")에 따라서 실행됩니다.
+pytest will run all files of the form test_*.py or *_test.py in the current directory and its subdirectories. More
+generally, it follows [standard test discovery rules]("chapter_23.2").
 <br><br>
 
-1.4 특정한 예외를 assert
+1.4 Assert that a certain exception is raised
 ---
-[raise]("chapter_4.2")구문을 사용하여 코드에서 일어난 예외사항을 표현하세요.
+Use the [raises]("chapter_4.2") helper to assert that some code raises an exception:
 ```python
 # content of test_sysexit.py
 import pytest
@@ -83,7 +88,7 @@ def test_mytest():
 	with pytest.raises(SystemExit):
 		f()
 ```
-위의 테스트 함수를 "quiet" 보고 모드로 실행하면 다음과 같습니다.
+Execute the test function with “quiet” reporting mode:
 ```
 $ pytest -q test_sysexit.py
 . 								[100%]
@@ -91,9 +96,10 @@ $ pytest -q test_sysexit.py
 ```
 <br>
 
-1.5 class 내부의 다중 테스트의 그룹화
+1.5 Group multiple tests in a class
 ---
-일단 당신이 여러개의 테스트를 개발하면, 당신은 아마 그것들을 class 내부로 그룹화하길 원할 것입니다. pytest는 한 개 이상의 테스트를 포함하는 class를 생성하는 것을 쉽게 할 수 있게 만듭니다.
+Once you develop multiple tests, you may want to group them into a class. pytest makes it easy to create a class
+containing more than one test:
 ```python
 # content of test_class.py
 class TestClass(object):
@@ -105,7 +111,7 @@ class TestClass(object):
 		x = "hello"
 		assert hasattr(x, 'check')
 ```
-pytest는 [Conventions for Python test discovery]("chapter_23.2")에 따라서 모든 테스트를 찾아냅니다. 그러므로, test_로 시작하는 모든 함수나, Test로 시작하는 class 내부에 있는 test_로 시작하는 함수들을 찾아냅니다. 이 class는 다른 class를 상속받을 필요가 없습니다. 단순히 파일 이름을 입력하고 실행시키면 됩니다.
+pytest discovers all tests following its [Conventions for Python test discovery]("chapter_23.2"), so it finds both test_ prefixed
 ```
 $ pytest -q test_class.py
 .F 								[100%]
@@ -122,19 +128,22 @@ E 	    +  where False = hasattr('hello', 'check')
 test_class.py:8: AssertionError
 1 failed, 1 passed in 0.12 seconds
 ```
-첫번째 테스트는 통과하고 두번째 테스트는 실패했습니다. 보다 쉽게 실패의 원인을 이해하기 위해, assertion의 중간 내용을 표시합니다.
+The first test passed and the second failed. You can easily see the intermediate values in the assertion to help you
+understand the reason for the failure.
 <br>
 
-1.6 함수 테스트를 위한 고유 임시 directory 요청
+1.6 Request a unique temporary directory for functional tests
 ---
-pytest는 고유한 임시 directory와 같은 임의의 자원을 요청하기 위하여 [Builtin fixtures/function argument](https://docs.pytest.org/en/latest/builtin.html#builtinfixtures)를 제공합니다.
+pytest provides [Builtin fixtures/function arguments](https://docs.pytest.org/en/latest/builtin.html#builtinfixtures) to request arbitrary resources, like a unique temporary directory:
 ```python
 # content of test_tmpdir.py
 def test_needsfiles(tmpdir):
 	print(tmpdir)
 	assert 0
 ```
-함수 signature의 안에 `tmpdir`의 이름을 리스트로 입력하세요. pytest는 확인 후 fixture factory를 불러내어 함수 call이 실행되기 전에 자원을 생성할 것입니다. 테스트가 실행되기 전에, pytest는 테스트 마다 실행되는 고유한 임시 directory를 생성합니다.
+List the name tmpdir in the test function signature and pytest will lookup and call a fixture factory to create the
+resource before performing the test function call. Before the test runs, pytest creates a unique-per-test-invocation
+temporary directory:
 ```
 $ pytest -q test_tmpdir.py
 F 								[100%]
@@ -152,23 +161,24 @@ test_tmpdir.py:3: AssertionError
 PYTEST_TMPDIR/test_needsfiles0
 1 failed in 0.12 seconds
 ```
-`tmpdir`의 사용에 대한 더 많은 정보는 [Temporary directories and files]("chapter_8")에 있습니다.
-제공되는 [pytest fixtures]의 종류를 확인하는 명령은 다음과 같습니다.
+More info on `tmpdir` handling is available at [Temporary directories and files]("chapter_8").
+Find out what kind of builtin [pytest fixtures] exist with the command:
 ```
 pytest --fixtures 	# shows builtin and custom fixtures
 ```
-`-v` 옵션을 추가하면, 앞에 표시된 _를 제거하고 볼 수 있습니다.
+Note that this command omits fixtures with leading _ unless the `-v` option is added
 <br>
 
 
-1.7 이후의 내용
+1.7 Continue reading
 ---
-pytest의 추가적인 기능과 당신의 고유한 테스트를 제작하는 것에 도움을 받기 위해선 다음과 같은 내용을 참고하십시오.
-- [python -m pytest 를 사용한 pytest 실행]("chapter_2”)
-- [기존의 장을 사용하는 pytest]("chpter_3")
-- [변수를 사용한 테스트 함수의 표시]("chapter_6")
-- [pytest fixture: 명확성, 모듈화, 확장성]("chapter_5")
-- [plugin의 사용]("chpater_19")
-- [추천 연습]("chapter_23")
+Check out additional pytest resources to help you customize tests for your unique workflow:
+- “[Calling pytest through python -m pytest]("chapter_2”)” for command line invocation examples
+- “[Using pytest with an existing test suite("chapter_3")]" for working with pre-existing tests
+- “[Marking test functions with attributes]("chapter_6")” for information on the pytest.mark mechanism
+- “[pytest fixtures: explicit, modular, scalable]("chapter_5")” for providing a functional baseline to your tests
+- “[Writing plugins]("chapter_19")” for managing and writing plugins
+- “[Good Integration Practices]("chapter_23")” for virtualenv and test layouts
+
 
 
