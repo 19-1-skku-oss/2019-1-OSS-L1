@@ -1,9 +1,5 @@
 .container {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 20% auto;
-  grid-template-areas: "sidebar post-list";
-  //padding: 0 20px;
+  padding: 0 20px;
 
   @include breakpoint($xs) {
     @include container(auto);
@@ -24,7 +20,4 @@
   @include breakpoint($xl) {
     @include container(1170px);
   }
-}
-.sidebar {
-    margin-top: 5em;
 }
