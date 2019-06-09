@@ -22,8 +22,8 @@ feature_row:
     alt: "Our repository"	
     title: "Our repository"	
     excerpt: "We contribute our project"	
-    url: "/docs/license/"	
-    btn_label: "https://19-1-skku-oss.github.io/2019-1-OSS-L1/"	
+    url: "https://19-1-skku-oss.github.io/2019-1-OSS-L1/"	
+    btn_label: "see more"	
 ---	
 
  {% include feature_row id="intro" type="center" %}	
