@@ -2,7 +2,7 @@
 layout: post
 title: "Doctest integration for modules and test files"
 summary: Chapter 10
-featured-img:
+featured-img: toronto
 ---
 
 By default all files matching the test*.txt pattern will be run through the python standard doctest module. You
