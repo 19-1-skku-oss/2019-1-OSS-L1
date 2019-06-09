@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "pytest fixture(2)"
+summary: Chapter 5-2
 featured-img: shane-rounce-205187
 ---
 
