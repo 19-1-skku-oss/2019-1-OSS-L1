@@ -47,7 +47,8 @@ pytest --maxfail=2    # stop after two failures
 ```
 ## Specifying tests / selecting tests
 Pytest supports several ways to run and select tests from the command-line.
-
+<br>
+<br>
 
 #### Run tests in a module
 
