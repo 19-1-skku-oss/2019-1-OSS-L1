@@ -2,7 +2,7 @@
 layout: post
 title: "Monkeypatching/mocking modules and environments"
 summary: Chapter 7
-featured-img: shane-rounce-205187
+featured-img: 
 ---
 
 
