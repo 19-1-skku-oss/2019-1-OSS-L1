@@ -2,7 +2,7 @@
 layout: post
 title: "Parametrizing fixtures and test functions"
 summary: Chapter 13
-featured-img: parametrize
+featured-img: parmetrize
 ---
 ## Chapter 13 Introduction
 
