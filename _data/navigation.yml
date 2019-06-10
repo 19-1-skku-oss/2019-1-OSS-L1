@@ -27,3 +27,5 @@ docs:
         url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/monkeypatching-mocking-modules-and-environments/
       - title: "Temporary directories and files"
         url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/temporary-directories-and-files/
+      - title: "Doctest integration for modules and test files"
+        url: https://mjyoo2.github.io/pytest_document_KR/pytest%20document/Doctest-integration/
