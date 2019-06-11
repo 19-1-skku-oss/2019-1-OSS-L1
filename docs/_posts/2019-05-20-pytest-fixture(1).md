@@ -183,6 +183,7 @@ E 		assert 0
 test_module.py:11: AssertionError
 ======================= 2 failed in 0.12 seconds =======================
 ```
+
 You see the two `assert 0` failing and more importantly you can also see that the same (module-scoped)
 `smtp_connection` object was passed into the two test functions because pytest shows the incoming argument
 values in the traceback. As a result, the two test functions using `smtp_connection` run as quick as a single one
