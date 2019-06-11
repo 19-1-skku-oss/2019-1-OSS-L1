@@ -92,7 +92,7 @@ featured-img: overviewjpg
 
    각 시나리오에 따라 어떻게 테스팅을 하면 되는지도 조금씩 이해하기 시작함.
           
-   <img src="{{site.url}}/assets/img/posts/pytest_issues.PNG" width="400" height="300" alt="" />
+   <img src="{{site.url}}/assets/img/posts/pytest_issues.png" width="400" height="300" alt="" />
           
    모르겠고 어려운 부분은 본 프로젝트에 Issue를 직접 날려 Pytest 전문가로부터 바로 피드백을 받음.
     
