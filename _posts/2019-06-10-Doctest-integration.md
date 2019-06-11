@@ -39,7 +39,6 @@ test_example.txt . [100%]
 ```
 
 pytest는 기본적으로 doctest directives를 찾기위해 test*.txt가 허용 된 상태입니다.
-당신의 클래스와 단어분석까지 했는데  tes fileds?과제 제출하고 갑니다..?^^
 
 
 ```python
