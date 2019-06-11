@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Open source projects from Team L1"
+title: "OSS-Team L1"
 summary: Overview of open source projects
 featured-img: overviewjpg
 ---
