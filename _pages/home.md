@@ -10,7 +10,7 @@ feature_row:
     alt: "우리의 프로젝트"	
     title: "우리의 프로젝트"	
     excerpt: "우리의 목적은 오픈 소스 프로젝트를 활발하게 즐기는 것입니다!"
-    url: "https://19-1-skku-oss.github.io/2019-1-OSS-L1/"
+    url: "https://19-1-skku-oss.github.io/2019-1-OSS-L1/overview-new/"
     btn_label: "  "
   - image_path: images/pytest.png
     alt: "pytest 도우미"	
