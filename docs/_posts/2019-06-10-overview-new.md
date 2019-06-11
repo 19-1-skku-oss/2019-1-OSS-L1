@@ -10,7 +10,7 @@ featured-img: overviewjpg
 <br>
 <br>
 
-## Git
+## 1. Git
 
 * Brief History: Control Version System의 하나로 Github 서비스 이전(2005)에 *Linus Torvalds*에 의해 처음 만들어졌다.
 
@@ -38,7 +38,7 @@ featured-img: overviewjpg
     * branch % merge: 각자 branch를 만들어, testing file을 만들기 시작했고, 나중에는 master에 합치기 시작, 여기서 conflict 충돌 해결하는 법 익힘.
     
 
-## Github
+## 2. Github
 
 * Brief History: *Chris Wanstrath* 외 세분에 의해 git repository를 외부에서 호스팅할 목적으로 만들어졌다.
 
@@ -79,7 +79,7 @@ featured-img: overviewjpg
 <br>
 <br>
 
-## Pytest
+## 3. Pytest
 
 * Brief History: 보다 좋은 프로그램 만드는 것을 돕기 위한 관련된 모든 기능을 지원하는 Python testing tool.
 
@@ -112,7 +112,7 @@ featured-img: overviewjpg
 
 
 
-## 느낀점
+## 4. 느낀점
 
 #### - 민종 <br>  
 _"지금까지 오픈소스 코드를 하고 이런 커뮤니티 활동에는 관심이 있었는데 프로젝트를 하면서 좀 더 공부해서 사람들이 많이 쓰는 프로젝트에도 직접 기여하고 싶다는 생각을 했습니다. 좋은 경험이였습니다."_ <br>
