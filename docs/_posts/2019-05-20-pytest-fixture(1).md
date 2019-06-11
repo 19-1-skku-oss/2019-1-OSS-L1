@@ -69,46 +69,57 @@ SMTP()` instance created by the fixture function. The test function fails on our
 exact protocol used by `pytest` to call the test function this way:
 
 1. pytest finds the `test_ehlo` because of the test_ prefix. The test function needs a function argument named
-smtp_connection. A matching fixture function is discovered by looking for a fixture-marked function
-named smtp_connection.
-2. smtp_connection() is called to create an instance.
-3. test_ehlo(<smtp_connection instance>) is called and fails in the last line of the test function.
+`smtp_connection`. A matching fixture function is discovered by looking for a fixture-marked function
+named `smtp_connection`.
+2. `smtp_connection()` is called to create an instance.
+3. `test_ehlo`(`<smtp_connection instance>`) is called and fails in the last line of the test function.
 Note that if you misspell a function argument or want to use one that isn’t available, you’ll see an error with a list of
 available function arguments.
 
-매개 변수의 철자를 잘못 입력했거나 사용할 수 없는 것을 사용하려는 경우 `smtp_connection` 이라는 사용 가능한 매개 변수 목록에 오류가 표시됩니다.
-
 ---
-사용할 수 있는 fixture를 보기 위해서는 아래와 같이 하십시오.
+Note: You can always issue:
 ```
 pytest --fixtures test_simplefactory.py
 ```
--v 옵션을 입력하면 fixture 이름 앞의 _ 가 무시됩니다.
+to see available fixtures (fixtures with leading _ are only shown if you add the -v option).
 
 ---
 
 
-fixture: dependency injection의 대표적인 예
+5.2 Fixtures: a prime example of dependency injection
 ---
-fixture를 통해 가져오기, 설정, 정리 등 세부사항을 신경쓰지 않고도 사전에 초기화된 특정 응용 프로그램 객체를 쉽게 받아 작업할 수 있습니다. fixture 함수가 injector 역할을 하고 테스트 함수가 fixture 객체의 소비자인 대표적인 [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection)의 예 입니다.
+Fixtures allow test functions to easily receive and work against specific pre-initialized application objects without
+having to care about import/setup/cleanup details. It’s a prime example of [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) where fixture functions take the role of the injector and test functions are the consumers of fixture objects.
+
 <br>
 
-`conftest.py`: ficture 함수의 공유
+5.3 `conftest.py`: sharing fixture functions
 ---
-테스트를 구현하는 동안 여러 테스트 파일의 fixture 함수를 사용하려는 경우 이를 `conftest.py` 파일로 옮길 수 있습니다. 테스트에 사용할 fixture 함수를 가져 올 필요가 없으며, 자동으로 `pytest`에 의해 발견됩니다. Fixture 함수의 발견은 테스트 class, 테스트 모듈, 그리고 `conftest.py` 파일 그리고 마지막으로 내장 플러그인과 third-party 플러그인 순으로 진행됩니다.
-또한, [local per-directory plugins]("chapter_19.2")를 사용하여 'conftest.py' 를 구현할 수 있습니다.
+If during implementing your tests you realize that you want to use a fixture function from multiple test files you can
+move it to a `conftest.py` file. You don’t need to import the fixture you want to use in a test, it automatically gets
+discovered by pytest. The discovery of fixture functions starts at test classes, then test modules, then `conftest.py`
+files and finally builtin and third party plugins.
+You can also use the `conftest.py` file to implement [local per-directory plugins]("chapter_19.2").
+
 <br>
 
-테스트 정보의 공유
+5.4 Sharing test data
 ---
-파일에서 테스트 정보를 테스트에 사용할 수 있게 하려면, 이 정보를 테스트에서 사용할 수 있도록 fixture에 load해야 합니다. 이것은 pytest의 자동 캐싱 메커니즘을 사용합니다.
-또 다른 좋은 방법은 테스트 폴더에 데이터 파일을 추가 하는 것 입니다. 이러한 방식에 도움이 되는 커뮤니티 플러그인이 있습니다.(예: pytest-datadir 및 pytest-datafile)
+If you want to make test data from files available to your tests, a good way to do this is by loading these data in a
+fixture for use by your tests. This makes use of the automatic caching mechanisms of pytest.
+Another good approach is by adding the data files in the tests folder. There are also community plugins available
+to help managing this aspect of testing, e.g. pytest-datadir and pytest-datafiles.
 <br>
 
-범위: class, 모듈, session 내부에서의 fixture 객체의 공유
+5.5 Scope: sharing a fixture instance across tests in a class, moduleor session
 ---
-네트워크 연결이 필요한 fixture는 연결성에 달려 있으며 대개 시간이 많이 소요됩니다. 앞의 예제를 확장하면 `@pytest.fixture` 호출에 scope="modlue" 매개 변수를 추가하여 smtp_connection fixture 함수가 테스트 모듈당 한 번만 호출되도록 할 수 있습니다.(기본 값은 테스트 함수 당 한번 호출하는 것 입니다.) 테스트 모듈의 여러 테스트 기능은 각각 동일한 `smtp_connection` fixture 인스턴스를 수신하므로 시간이 절약됩니다. 범위로 사용할 수 있는 값은 fucntion, class, module, package, 또는 session 입니다.
-다음 예제는 fixture 함수를 별도의 conftest.py 파일에 저장하여 디렉토리에 있는 여러 테스트 모듈의 테스트가 fixture 함수에 접근 할 수 있도록합니다.
+Fixtures requiring network access depend on connectivity and are usually time-expensive to create. Extending the
+previous example, we can add a `scope="module"` parameter to the `@pytest.fixture` invocation to cause the
+decorated `smtp_connection` fixture function to only be invoked once per test module (the default is to invoke once
+per test function). Multiple test functions in a test module will thus each receive the same `smtp_connection` fixture
+instance, thus saving time. Possible values for `scope` are: `function`, `class`, `module`, `package` or `session`.
+The next example puts the fixture function into a separate `conftest.py` file so that tests from multiple test modules
+in the directory can access the fixture function:
 ```python
 # content of conftest.py
 import pytest
@@ -118,7 +129,8 @@ import smtplib
 def smtp_connection():
 	return smtplib.SMTP("smtp.gmail.com", 587, timeout=5)
 ```
-fixture의 이름은 `smtp_connection`이며, 테스트 또는 conftest.py가 있는 디렉토리 혹은 그 하위 디렉토리에 있는 fixture 함수에 `smtp_connection`이라는 이름을 입력 매개 변수로 나열하여 결과에 접근 할 수 있습니다.
+The name of the fixture again is `smtp_connection` and you can access its result by listing the name
+`smtp_connection` as an input parameter in any test or fixture function (in or below the directory where `conftest.py` is located):
 ```python
 # content of test_module.py
 
@@ -135,7 +147,7 @@ def test_noop(smtp_connection):
 	assert response == 250
 	assert 0 # for demo purposes
 ```
-우리는 무슨 일이 일어나고 있는지 검사하기 위해 실패할 assert 0 문을 삽입하고 테스트를 진행합니다.
+We deliberately insert failing `assert 0` statements in order to inspect what is going on and can now run the tests:
 ```
 $ pytest test_module.py
 ========================= test session starts ==========================
@@ -171,8 +183,11 @@ E 		assert 0
 test_module.py:11: AssertionError
 ======================= 2 failed in 0.12 seconds =======================
 ```
-위의 결과를 확인함으로써 동일한 smtp_connection 객체가 두개의 테스트 함수로 전달되었음을 볼 수 있습니다. 결과적으로 smtp_connection을 사용하는 두 테스트 함수는 동일한 인스턴스를 다시 사용하기 때문에 단일 테스트만큼 빠르게 실행됩니다.
-세션 범위로 지정된 smtp_connection 인스턴스를 갖고 싶다면 간단히 선언하면 됩니다.
+You see the two `assert 0` failing and more importantly you can also see that the same (module-scoped)
+`smtp_connection` object was passed into the two test functions because pytest shows the incoming argument
+values in the traceback. As a result, the two test functions using `smtp_connection` run as quick as a single one
+because they reuse the same instance.
+If you decide that you rather want to have a session-scoped `smtp_connection` instance, you can simply declare it:
 ```
 @pytest.fixture(scope="session")
 def smtp_connection():
@@ -180,17 +195,19 @@ def smtp_connection():
 	# all tests needing it
 	...
 ```
-마지막으로, `class` 범위는 test class가 실해될때 마다 실행됩니다.
+Finally, the `class` scope will invoke the fixture once per test class.
 
 ---
-주의: pytest는 한번에 하나의 fixture만 캐시합니다. 즉, 매개 변수화 된 fixture를 사용할 때 pytest는 주어진 범위 내에서 fixture를 두 번 이상 호출할 수 있습니다.
+Note: Pytest will only cache one instance of a fixture at a time. This means that when using a parametrized fixture,
+pytest may invoke a fixture more than once in the given scope.
 
 ---
 
-상위 범위의 fixture가 먼저 인스턴스화
+5.6 Higher-scoped fixtures are instantiated first
 ---
-feature에 대한 함수의 요청에서, 상위 범위(예: session)의 fixture는 함수 또는 class와 같은 낮은 범위의 fixture보다 먼저 인스턴스화됩니다. 동일한 범위의 fixture의 상대적 순서는 테스트 함수에서 선언 된 순서를 따르고 fixture들 사이의 의존성을 존중합니다.
-아래의 코드를 살펴봅시다.
+Within a function request for features, fixture of higher-scopes (such as `session`) are instantiated first than lowerscoped fixtures (such as `function` or `class`). The relative order of fixtures of same scope follows the declared
+order in the test function and honours dependencies between fixtures.
+Consider the code below:
 ```python
 @pytest.fixture(scope="session")
 def s1():
@@ -212,9 +229,10 @@ def test_foo(f1, m1, f2, s1):
 	...
 ```
 
-test_foo에 의해 요청된 fixture는 다음과 같은 순서로 인스턴스화 됩니다.
-- `s1`: 제일 상위 범위의 fixture(session)
-- `m1`: 두번째로 높은 범위의 fixture(module)
-- `tmpdir`: f1에 의해 요청되는 함수 범위의 fixture, `f1`에 의해 사용되기 때문에 이 시점에서 인스턴스화 되어야 합니다.
-- `f1`: `test_foo`의 첫번째 매개 변수인 function 범위의 fixture
-- `f2`: `test_foo`의 마지막 매개 변수인 function 범위의 fixture
+The fixtures requested by `test_foo` will be instantiated in the following order:
+- `s1`:  is the highest-scoped fixture (`session`).
+- `m1`:  is the second highest-scoped fixture (`module`).
+- `tmpdir`:  is a `function`-scoped fixture, required by `f1`: it needs to be instantiated at this point because it is
+a dependency of `f1`.
+- `f1`: is the first `function`-scoped fixture in `test_foo` parameter list
+- `f2`:  is the last `function`-scoped fixture in `test_foo` parameter list.
