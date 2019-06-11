@@ -2,7 +2,7 @@
 layout: post
 title: "Open source projects from Team L1"
 summary: Overview of open source projects
-featured-img: overview
+featured-img: overviewjpg
 ---
 # Git, Github and Pytest
 
