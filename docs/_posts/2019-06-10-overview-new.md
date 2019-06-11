@@ -7,6 +7,9 @@ featured-img: overviewjpg
 
 # Git, Github and Pytest
 
+<br>
+<br>
+
 ## Git
 
 * Brief History: Control Version System의 하나로 Github 서비스 이전(2005)에 *Linus Torvalds*에 의해 처음 만들어졌다.
@@ -57,10 +60,12 @@ featured-img: overviewjpg
       <img src="{{site.url}}/assets/img/posts/wiki.png" width="400" height="300" style="display:block;margin: 0 auto"/>
     <br>    
    <li>fork & pull request: 한국어를 위한 정적페이지를 따로 관리하기로 했을때, 기존 것을 fork 한 후 두번째 repository에서 호스팅.</li>
- </ul>
-  </ul>
-  
+
+<br>
+
   * manage: 수많은 파일과 폴더를 Github를 통해 많은 사람들과 보다 효율적으로 관리하는 법을 익힘. 
+
+<br>
   
   * static page with Jekyllthemes: <br>
     민종(한글 페이지 담당) : 번역한 document를 static page로 보여주는 것이 제일 접근하기 좋고 보기 편하다는 생각에 static page에도 큰 관심을 쏟았습니다.
