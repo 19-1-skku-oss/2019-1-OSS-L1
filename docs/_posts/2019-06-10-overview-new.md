@@ -46,15 +46,15 @@ featured-img: overviewjpg
    <ul>
    <li>issues: 수시로 궁금하고 문제 해결이 필요한 부분을 issue로 올림, 총 10개가 만들어졌고, 4개를 끝마치고, 6개 해결 중..</li> 
     <br>
-      <img src="{{site.url}}/assets/img/issue.jpg" width="400" height="300" style="margin-left:auto;margin-right:auto;display:block" />
+      <img src="{{site.url}}/assets/img/posts/issue.jpg" width="400" height="300" style="margin-left:auto;margin-right:auto;display:block" />
     <br>
    <li>Projects: 8개의 project 실시, 3개 마치고, 5개 진행 중..</li>
     <br><div style="display:block;margin: 0 auto">
-      <img src="{{site.url}}/assets/img/project.png" width="400" height="300" style="margin-left:auto;margin-right:auto;display:block"/></div>
+      <img src="{{site.url}}/assets/img/posts/project.png" width="400" height="300" style="margin-left:auto;margin-right:auto;display:block"/></div>
     <br>
     <li>wiki: 팀 Wiki에 우리가 이번 실습에서 프로젝트를 진행하면서 다같이 작업한 흔적들이 최대한 임팩트 있게 남을 수 있도록 노력했다. 소주제별로 페이지를 생성하여 wiki페이지를 통해 우리팀에 대한 정보를 파악할 수 있게 만들었다.</li>
     <br>
-      <img src="{{site.url}}/assets/img/wiki.png" width="400" height="300" style="display:block;margin: 0 auto"/>
+      <img src="{{site.url}}/assets/img/posts/wiki.png" width="400" height="300" style="display:block;margin: 0 auto"/>
     <br>    
    <li>fork & pull request: 한국어를 위한 정적페이지를 따로 관리하기로 했을때, 기존 것을 fork 한 후 두번째 repository에서 호스팅.</li>
  </ul>
@@ -69,7 +69,7 @@ featured-img: overviewjpg
     
     영숙(영문 페이지 담당) : 기존에 한국어 깃헙 페이지가 적용 되어 있는 상황에서 새로운 테마를 바로 끌고 와 적용 시키는 데에 대한 두려움(?)이 있었기 때문에 일단 ruby를 활용하여 Jekyll 테마를 로컬에서 적용 시켜 볼 수 있는 기능을 사용했다. <br>
     이 때 상단 로고 및 메인 화면 배경사진 등 대략적인 페이지 레이아웃에 변화를 준 후 변경된 테마를 themes 브랜치를 생성하여 로컬에서 원격 저장소로 push하였다. 내 컴퓨터 프로그램 상에서 테마 코드에 변화를 주면 아래 보이는 스크린샷처럼 'local:...'의 주소로 웹페이지 생성이 되면서 그때 그때 페이지가 변화 되는 모습을 볼 수 있다.<br>
-    <img src="{{site.url}}/assets/img/theme_ruby.png" width="400" height="600" style="display:block;margin: 0 auto"/>
+    <img src="{{site.url}}/assets/img/posts/theme_ruby.png" width="400" height="600" style="display:block;margin: 0 auto"/>
 
 ## Pytest
 
@@ -82,17 +82,17 @@ featured-img: overviewjpg
     
   * What: 처음에는 다들 무엇을 하는 것인지 이해하기 어려워했지만, 점차 코드를 테스팅하는 툴이라는 기본 목적에 맞게,
   
-   <img src="{{site.url}}/assets/img/pytest_first_one.PNG" width="400" height="300" alt="" />
+   <img src="{{site.url}}/assets/img/posts/pytest_first_one.PNG" width="400" height="300" alt="" />
          
    Pytest 첫 설치 및 실행부터,
           
-   <img src="{{site.url}}/assets/img/test_result.PNG" width="400" height="300" alt="" />
+   <img src="{{site.url}}/assets/img/posts/test_result.PNG" width="400" height="300" alt="" />
           
    테스팅 후 결과가 무엇을 의미하는지도 배웠고,
 
    각 시나리오에 따라 어떻게 테스팅을 하면 되는지도 조금씩 이해하기 시작함.
           
-   <img src="{{site.url}}/assets/img/pytest_issues.PNG" width="400" height="300" alt="" />
+   <img src="{{site.url}}/assets/img/posts/pytest_issues.PNG" width="400" height="300" alt="" />
           
    모르겠고 어려운 부분은 본 프로젝트에 Issue를 직접 날려 Pytest 전문가로부터 바로 피드백을 받음.
     
