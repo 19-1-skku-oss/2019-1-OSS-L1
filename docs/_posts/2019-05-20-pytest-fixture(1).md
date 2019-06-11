@@ -4,19 +4,25 @@ title: Pytest fixture(1)
 summary: Chapter 5-1
 featured-img: code
 ---
-#pytest fixture
+# pytest fixtures: explicit, modular, scalable
 
-[test fixture 를 쓰는 목적](https://en.wikipedia.org/wiki/Test_fixture#Software)은 테스트가 안정적이고 반복적으로 실행될 수 잇는 고정된 기준점을 제공하는 것입니다. pytest fixture는 고전적인 xUnit 스타일의 설정/해제 기능을 극적으로 향상시킵니다.
-- fixture는 명시적인 이름을 가지며, 테스트 함수, 모듈, class, 혹은 전체 프로젝트에서 사용을 선언함으로써 활성화됩니다.
-- fixture는 모듈화 방식으로 구현됩니다. 각 fixture의 이름은 다른 fixture에서 사용 가능하도록 fixture 함수를 만들어냅니다.
-- fixture 관리는 단순한 단위에서 복잡한 기능 테스트에 이르기까지 다양하며 구성 및 구성 요소 옵션에 따라 fixture 및 테스트를 매개 변수화하거나 함수, 클래스, 모듈 또는 전체 테스트 session 범위에서 fixture를 재사용 할 수 있습니다.
+The [purpose of test fixtures](https://en.wikipedia.org/wiki/Test_fixture#Software) is to provide a fixed baseline upon which tests can reliably and repeatedly execute. pytest
+fixtures offer dramatic improvements over the classic xUnit style of setup/teardown functions:
+• fixtures have explicit names and are activated by declaring their use from test functions, modules, classes or
+whole projects.
+• fixtures are implemented in a modular manner, as each fixture name triggers a fixture function which can itself
+use other fixtures.
+• fixture management scales from simple unit to complex functional testing, allowing to parametrize fixtures and
+tests according to configuration and component options, or to re-use fixtures across function, class, module or
+whole test session scopes.
+In addition, pytest continues to support [classic xunit-style setup]("chapter_17"). You can mix both styles, moving incrementally from classic to new style, as you prefer. You can also start out from existing [unittest.TestCase]("chapter_15") style or [nose based]("chapter_16") projects.
 
-또한 pytest는 [고전적인 xunit스타일]("chapter_17") 설정을 계속 지원합니다. 원하는대로 고전적인 스타일에서 새로운 스타일로 점진적으로 이동하면서 두 스타일을 혼합하여 사용할 수 있습니다. 기존 [unittest.TestCase]("chapter_15")스타일 또는 [nose]("chapter_16") 기반 프로젝트에서 사용할 수도 있습니다.
 
-함수의 매개변수 Fixture
+5.1 Fixtures as Function arguments
 ---
-테스트 함수는 fixture 객체를 매개 변수로 받을 수 있습니다. 각 매개 변수 이름에 대해 그 이름을 가진 fixture 함수는 fixture 객체를 제공합니다. fixture 함수는 `@pytest`로 표시되어 등록됩니다. 아래 코드는 test 모듈을 포함한 fixture, test 함수의 간단한 예시입니다.
-
+Test functions can receive fixture objects by naming them as an input argument. For each argument name, a fixture
+function with that name provides the fixture object. Fixture functions are registered by marking them with `@pytest.
+fixture`. Let’s look at a simple self-contained test module containing a fixture and a test function using it:
 ```python
 # content of ./test_smtpsimple.py
 import pytest
@@ -31,7 +37,8 @@ def test_ehlo(smtp_connection):
 	assert 0 # for demo purposes
 ```
 
-여기서 `test_ehlo` 는 `stmp_connection` fixture 값을 필요로합니다. pytest는 `@pytest`가 표시된 같은 함수를 찾아서 호출합니다. 이 테스트를 실행한 결과는 다음과 같습니다.
+Here, the `test_ehlo` needs the `smtp_connection` fixture value. pytest will discover and call the `@pytest.
+fixture` marked `smtp_connection` fixture function. Running the test looks like this:
 ```
 $ pytest test_smtpsimple.py
 ======================== test session starts =========================
@@ -57,11 +64,17 @@ test_smtpsimple.py:11: AssertionError
 ====================== 1 failed in 0.12 seconds ======================
 ```
 
-실패 상황에서 `stmp_connection`에 포함되어 있는 smtlib을 사용하여 테스트 함수가 호출되었음을 알 수 있습니다. fixture 함수로 생성된 SMTP()는 `assert 0` 에서 실패합니다. `pytest`가 테스트 함수를 이런 방식으로 호출하기 위해 사용한 정확한 프로토콜은 다음과 같습니다.
+In the failure traceback we see that the test function was called with a `smtp_connection` argument, the `smtplib.
+SMTP()` instance created by the fixture function. The test function fails on our deliberate assert 0. Here is the
+exact protocol used by `pytest` to call the test function this way:
 
-1. pytest는 test_ 접두어로 `test_ehlo`를 찾습니다. 테스트 함수에는 `smtp_connection`이라는 매개 변수가 필요합니다. 일치하는 fixture를 사용하기 위해 `@pytest`가 표시된 같은 이름의 함수를 찾습니다.
-2. `smtp_connection`이 call 되어 객체가 생성됩니다.
-3. `test_ehlo(<smtp_connection instance>)` 가 call 되어 테스트에 실패합니다.
+1. pytest finds the `test_ehlo` because of the test_ prefix. The test function needs a function argument named
+smtp_connection. A matching fixture function is discovered by looking for a fixture-marked function
+named smtp_connection.
+2. smtp_connection() is called to create an instance.
+3. test_ehlo(<smtp_connection instance>) is called and fails in the last line of the test function.
+Note that if you misspell a function argument or want to use one that isn’t available, you’ll see an error with a list of
+available function arguments.
 
 매개 변수의 철자를 잘못 입력했거나 사용할 수 없는 것을 사용하려는 경우 `smtp_connection` 이라는 사용 가능한 매개 변수 목록에 오류가 표시됩니다.
 
