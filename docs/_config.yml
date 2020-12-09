@@ -49,7 +49,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
  
-analytics:
-  provider: google
-  google:
-    tracking_id : G-GH7JQE29L0
+g-analytics: G-GH7JQE29L0
