@@ -48,5 +48,9 @@ compress_html:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
- 
-g-analytics: G-GH7JQE29L0
+
+analytics:
+  provider               : "google"
+  google:
+    tracking_id          : G-GH7JQE29L0
+    anonymize_ip         : # true, false (default)
