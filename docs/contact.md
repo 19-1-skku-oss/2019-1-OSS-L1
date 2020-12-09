@@ -14,8 +14,8 @@ permalink: /contact/
 <br>
 <br>
 <li>
-  이영숙 2014314433 <br>
-  martinalee0528@gmail.com
+  이영숙 2014000000 <br>
+  u7y5123@skku.edu
 </li>
 <br>
 <br>
