@@ -48,3 +48,5 @@ compress_html:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  
+g-analytics: G-GH7JQE29L0
